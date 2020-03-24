@@ -1,0 +1,4 @@
+1 :Lenovo laptop 3000.0ron ,out of stock :(.
+2 :Asus laptop 2500.0ron ,out of stock :(.
+3 :Ariston wwashing machine 1200.0ron ,8left
+4 :Bosch refrigerator 2200.0ron ,6left

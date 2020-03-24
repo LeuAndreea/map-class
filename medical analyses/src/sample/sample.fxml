@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <GridPane fx:id="bmiMenu" layoutX="341.0" layoutY="263.0" prefHeight="94.0" prefWidth="229.0" visible="false">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="112.0" text="VALUE:" />
+            <TextField fx:id="bmiValue" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+        <ListView fx:id="analysisView" layoutX="35.0" layoutY="81.0" prefHeight="299.0" prefWidth="290.0" />
+        <Label layoutX="35.0" layoutY="51.0" prefHeight="17.0" prefWidth="238.0" text="ANALYSIS" />
+        <Label layoutX="473.0" layoutY="180.0" prefHeight="17.0" prefWidth="68.0" text="Type" />
+        <TextField fx:id="dateTextBox" layoutX="341.0" layoutY="130.0" prefHeight="25.0" prefWidth="124.0" />
+        <Label layoutX="473.0" layoutY="134.0" prefHeight="17.0" prefWidth="68.0" text="Date" />
+        <Label layoutX="341.0" layoutY="92.0" prefHeight="17.0" prefWidth="156.0" text="REGISTER NEW ANALYSIS:" />
+        <ChoiceBox fx:id="typeChoiceBox" layoutX="341.0" layoutY="176.0" prefHeight="25.0" prefWidth="124.0" />
+      <GridPane fx:id="bpMenu" layoutX="345.0" layoutY="265.0" visible="false" AnchorPane.rightAnchor="57.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Systolic Value:" />
+            <Label text="Diastolic Value" GridPane.rowIndex="1" />
+            <TextField fx:id="systolicValue" GridPane.columnIndex="1" />
+            <TextField fx:id="diastolicValue" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="continueButton" layoutX="345.0" layoutY="206.0" mnemonicParsing="false" onAction="#showMenu" text="CONTINUE" />
+      <Button fx:id="addButton" layoutX="341.0" layoutY="353.0" mnemonicParsing="false" onAction="#addNewAnalysis" text="ADD" visible="false" />
+      <Label layoutX="345.0" layoutY="155.0" prefHeight="17.0" prefWidth="124.0" text="*format dd/mm/yy" />
+      <Label layoutX="35.0" layoutY="401.0" text="ARE YOU HEALTHY ?" />
+      <Button fx:id="healthButton" layoutX="160.0" layoutY="397.0" mnemonicParsing="false" onAction="#isHealthy" text="FIND OUT" />
+      <TextField fx:id="healthyTextBox" layoutX="241.0" layoutY="397.0" prefHeight="25.0" prefWidth="100.0" />
+    </children>
+</AnchorPane>
